@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DEB-Fq-qNA">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DEB-Fq-qNA">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hrh-6s-dZ3" id="LKm-OR-z1x">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DXh-m4-x3s">
@@ -97,39 +95,35 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UPG-oj-W9q">
-                                <rect key="frame" x="50" y="187" width="314" height="150"/>
+                                <rect key="frame" x="50" y="187" width="314" height="166"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U3J-R0-1jS">
-                                        <rect key="frame" x="0.0" y="0.0" width="314" height="30"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6DH-j1-SLF">
-                                        <rect key="frame" x="0.0" y="40" width="314" height="30"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="44" width="314" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Leage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aap-hH-FNd">
-                                        <rect key="frame" x="0.0" y="80" width="314" height="30"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="88" width="314" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Team" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rKE-v9-NBr">
-                                        <rect key="frame" x="0.0" y="120" width="314" height="30"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="132" width="314" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLp-zu-XLk">
-                                <rect key="frame" x="190" y="369" width="34" height="30"/>
+                                <rect key="frame" x="190" y="385" width="34" height="30"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
-                                    <action selector="saveButtonTapped:" destination="8K9-2q-IXD" eventType="touchUpInside" id="hY9-aI-8LA"/>
+                                    <action selector="saveButtonPressed:" destination="8K9-2q-IXD" eventType="touchUpInside" id="9Hq-7Y-eXc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -147,11 +141,12 @@
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="V1y-YK-nLQ"/>
                     <connections>
-                        <outlet property="ageTextField" destination="6DH-j1-SLF" id="6Y9-re-8DD"/>
-                        <outlet property="leagueTextField" destination="Aap-hH-FNd" id="NAj-bV-GJQ"/>
-                        <outlet property="nameTextField" destination="U3J-R0-1jS" id="WV2-Wc-aLC"/>
-                        <outlet property="teamTextField" destination="rKE-v9-NBr" id="MJO-gY-cwo"/>
+                        <outlet property="ageTextField" destination="6DH-j1-SLF" id="kRJ-4M-AR7"/>
+                        <outlet property="leagueTextField" destination="Aap-hH-FNd" id="LwN-Mo-g85"/>
+                        <outlet property="nameTextField" destination="U3J-R0-1jS" id="bI1-Nc-dFc"/>
+                        <outlet property="teamTextField" destination="rKE-v9-NBr" id="mod-iT-dJz"/>
                         <segue destination="wFc-3q-vwq" kind="unwind" identifier="UnwindToAthleteTable" unwindAction="prepareForUnwindWithSegue:" id="HPS-Df-mzT"/>
+                        <segue destination="wFc-3q-vwq" kind="unwind" identifier="fromFormToTable" unwindAction="unwindSegueFromAthleteFormVCWithSegue:" id="oiI-JF-i3u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MrL-ji-oiy" sceneMemberID="firstResponder"/>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9CDE07B72467523F0031DCED /* Athlete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE07B62467523F0031DCED /* Athlete.swift */; };
+		9CDE07B9246752E30031DCED /* AthleteFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE07B8246752E30031DCED /* AthleteFormViewController.swift */; };
 		A94375AE1E4648230053B419 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94375AD1E4648230053B419 /* AppDelegate.swift */; };
 		A94375B31E4648230053B419 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A94375B11E4648230053B419 /* Main.storyboard */; };
 		A94375B51E4648230053B419 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A94375B41E4648230053B419 /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9CDE07B62467523F0031DCED /* Athlete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Athlete.swift; sourceTree = "<group>"; };
+		9CDE07B8246752E30031DCED /* AthleteFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteFormViewController.swift; sourceTree = "<group>"; };
 		A94375AA1E4648230053B419 /* FavoriteAthlete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FavoriteAthlete.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A94375AD1E4648230053B419 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A94375B21E4648230053B419 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 				A94375B41E4648230053B419 /* Assets.xcassets */,
 				A94375B61E4648230053B419 /* LaunchScreen.storyboard */,
 				A94375B91E4648230053B419 /* Info.plist */,
+				9CDE07B62467523F0031DCED /* Athlete.swift */,
+				9CDE07B8246752E30031DCED /* AthleteFormViewController.swift */,
 			);
 			path = FavoriteAthlete;
 			sourceTree = "<group>";
@@ -95,6 +101,7 @@
 				TargetAttributes = {
 					A94375A91E4648230053B419 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4F69MMSLZL;
 						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
@@ -105,6 +112,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -136,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CDE07B9246752E30031DCED /* AthleteFormViewController.swift in Sources */,
 				A9FE274F1E4A8F0E00F01A14 /* AthleteTableViewController.swift in Sources */,
+				9CDE07B72467523F0031DCED /* Athlete.swift in Sources */,
 				A94375AE1E4648230053B419 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,10 +288,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4F69MMSLZL;
 				INFOPLIST_FILE = FavoriteAthlete/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.FavoriteAthlete;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.abc123FavoriteAthlete;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
@@ -291,10 +302,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4F69MMSLZL;
 				INFOPLIST_FILE = FavoriteAthlete/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.FavoriteAthlete;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.abc123FavoriteAthlete;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
