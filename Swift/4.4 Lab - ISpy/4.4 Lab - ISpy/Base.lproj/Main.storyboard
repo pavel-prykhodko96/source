@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="__4_Lab___ISpy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fqI-Ku-hyQ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grapefruit-slice-332-332" translatesAutoresizingMaskIntoConstraints="NO" id="aK8-s6-qr6">
+                                        <rect key="frame" x="-221" y="0.0" width="856" height="818"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="aK8-s6-qr6" firstAttribute="top" secondItem="fqI-Ku-hyQ" secondAttribute="top" id="1am-ZB-TJt"/>
+                                    <constraint firstAttribute="trailing" secondItem="aK8-s6-qr6" secondAttribute="trailing" constant="-221" id="SZa-vv-QtX"/>
+                                    <constraint firstItem="aK8-s6-qr6" firstAttribute="centerY" secondItem="fqI-Ku-hyQ" secondAttribute="centerY" id="XSH-Lp-VrH"/>
+                                    <constraint firstItem="aK8-s6-qr6" firstAttribute="centerX" secondItem="fqI-Ku-hyQ" secondAttribute="centerX" id="eH9-vX-AtF"/>
+                                    <constraint firstItem="aK8-s6-qr6" firstAttribute="leading" secondItem="fqI-Ku-hyQ" secondAttribute="leading" constant="-221" id="y0H-u6-G3k"/>
+                                    <constraint firstAttribute="bottom" secondItem="aK8-s6-qr6" secondAttribute="bottom" id="zTg-bI-Bva"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fqI-Ku-hyQ" secondAttribute="bottom" id="feY-hF-b32"/>
+                            <constraint firstItem="fqI-Ku-hyQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hgr-di-oYK"/>
+                            <constraint firstItem="fqI-Ku-hyQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oCy-gC-0SI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fqI-Ku-hyQ" secondAttribute="trailing" id="yFc-3X-kaY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="aK8-s6-qr6" id="lv4-S5-flX"/>
+                        <outlet property="scrollView" destination="fqI-Ku-hyQ" id="Wvl-YV-v6W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="grapefruit-slice-332-332" width="332" height="332"/>
+    </resources>
+</document>
