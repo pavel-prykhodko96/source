@@ -18,7 +18,6 @@ class BookTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -35,21 +34,26 @@ class BookTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: PropertyKeys.bookCell, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: PropertyKeys.bookCell, for: indexPath) as! BookTableViewCell
         
         let book = books[indexPath.row]
-        cell.textLabel?.text = book.title
-        cell.detailTextLabel?.text = book.description
+        cell.update(with: book)
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            books.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
     }
     
     // MARK: - Navigation
     
     @IBAction func prepareForUnwind(segue: UIStoryboardSegue) {
-        guard let source = segue.source as? BookFormViewController,
+        guard let source = segue.source as? BookFormTableViewController,
             let book = source.book else {return}
-        
         if let indexPath = tableView.indexPathForSelectedRow {
             books.remove(at: indexPath.row)
             books.insert(book, at: indexPath.row)
@@ -60,12 +64,11 @@ class BookTableViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let bookFormViewController = segue.destination as? BookFormViewController else {return}
+        guard let bookFormTableViewController = segue.destination as? BookFormTableViewController else {return}
         
         if let indexPath = tableView.indexPathForSelectedRow,
             segue.identifier == PropertyKeys.editBookSegue {
-            bookFormViewController.book = books[indexPath.row]
+            bookFormTableViewController.book = books[indexPath.row]
         }
     }
-    
 }
