@@ -10,12 +10,7 @@ import UIKit
 
 class EmojiTableViewController: UITableViewController {
     
-    var emojis: [Emoji] = [
-        Emoji(symbol: "😂", name: "Laughing face", description: "Maximal degree of laughing", usage: "show that something is extremely funny"),
-        Emoji(symbol: "💔", name: "Broken heart", description: "The heart that was broken", usage: "upset, sarcasm"),
-        Emoji(symbol: "💩", name: "Poop", description: "Piece of shit", usage: "relation, joke"),
-        Emoji(symbol: "⛈", name: "Lightning with rain", description: "Lightning with rain weather", usage: "describe weather"),
-    ]
+    var emojis: [Emoji] = [Emoji]()
     
     @IBAction func editButtonTapped(_ sender: UIBarButtonItem) {
         let tableViewEditingMode = tableView.isEditing
@@ -27,6 +22,13 @@ class EmojiTableViewController: UITableViewController {
         tableView.cellLayoutMarginsFollowReadableWidth = true
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 44.0
+        
+        if let storedEmojis = Emoji.loadFromFile() {
+            emojis = storedEmojis
+        } else {
+            emojis = Emoji.loadSampleEmojis()
+        }
+        Emoji.saveToFile(emojis: emojis)
     }
     // MARK: - Table view data source
     
@@ -56,6 +58,7 @@ class EmojiTableViewController: UITableViewController {
         if editingStyle == .delete {
             emojis.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .automatic)
+            Emoji.saveToFile(emojis: emojis)
         }
     }
     // MARK: - Table view delegate
@@ -69,6 +72,7 @@ class EmojiTableViewController: UITableViewController {
         let movedEmoji = emojis.remove(at: fromIndexPath.row)
         emojis.insert(movedEmoji, at: to.row)
         tableView.reloadData()
+        Emoji.saveToFile(emojis: emojis)
     }
     
     // MARK: - Segues
@@ -97,5 +101,6 @@ class EmojiTableViewController: UITableViewController {
             emojis.append(emoji)
             tableView.insertRows(at: [newIndexPath], with: .automatic)
         }
+        Emoji.saveToFile(emojis: emojis)
     }
 }
