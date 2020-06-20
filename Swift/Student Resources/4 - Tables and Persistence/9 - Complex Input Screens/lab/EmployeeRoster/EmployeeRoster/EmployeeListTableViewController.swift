@@ -68,6 +68,7 @@ class EmployeeListTableViewController: UITableViewController {
         } else {
             employees.append(employee)
         }
+        tableView.reloadData()
     }
 
 }
