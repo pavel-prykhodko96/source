@@ -1,0 +1,8 @@
+﻿  Homework21.cpp
+c:\users\pavlu\source\repos\homework21\homework21\homework21.cpp(77): warning C4018: '<': signed/unsigned mismatch
+c:\users\pavlu\source\repos\homework21\homework21\homework21.cpp(120): warning C4244: 'argument': conversion from 'double' to 'const _Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+  Homework21.vcxproj -> C:\Users\pavlu\source\repos\Homework21\Debug\Homework21.exe

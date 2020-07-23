@@ -1,0 +1,3 @@
+﻿  Stroustrup_section6_tasks_after_chapter.cpp
+c:\users\pavlu\source\repos\stroustrup_section6_tasks_after_chapter\stroustrup_section6_tasks_after_chapter\stroustrup_section6_tasks_after_chapter.cpp(35): warning C4244: 'return': conversion from 'long double' to 'long', possible loss of data
+  Stroustrup_section6_tasks_after_chapter.vcxproj -> C:\Users\pavlu\source\repos\Stroustrup_section6_tasks_after_chapter\Debug\Stroustrup_section6_tasks_after_chapter.exe

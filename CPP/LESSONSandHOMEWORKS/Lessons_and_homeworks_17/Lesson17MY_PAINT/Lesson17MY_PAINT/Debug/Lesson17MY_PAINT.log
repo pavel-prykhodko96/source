@@ -1,0 +1,19 @@
+﻿  stdafx.cpp
+  Circle.cpp
+  Lesson17MY_PAINT.cpp
+D:\fast access\source\CPP_repos\LESSONSandHOMEWORKS\Lessons_and_homeworks_17\Lesson17MY_PAINT\Lesson17MY_PAINT\vector_shape.h(15,22): warning C4018:  '<': signed/unsigned mismatch
+D:\fast access\source\CPP_repos\LESSONSandHOMEWORKS\Lessons_and_homeworks_17\Lesson17MY_PAINT\Lesson17MY_PAINT\Lesson17MY_PAINT.cpp(163,9): error C2065:  'ID_SHAPES_RECTANGLE': undeclared identifier
+D:\fast access\source\CPP_repos\LESSONSandHOMEWORKS\Lessons_and_homeworks_17\Lesson17MY_PAINT\Lesson17MY_PAINT\Lesson17MY_PAINT.cpp(163,9): error C2131:  expression did not evaluate to a constant
+D:\fast access\source\CPP_repos\LESSONSandHOMEWORKS\Lessons_and_homeworks_17\Lesson17MY_PAINT\Lesson17MY_PAINT\Lesson17MY_PAINT.cpp(163,9): message :  a non-constant (sub-)expression was encountered
+D:\fast access\source\CPP_repos\LESSONSandHOMEWORKS\Lessons_and_homeworks_17\Lesson17MY_PAINT\Lesson17MY_PAINT\Lesson17MY_PAINT.cpp(164,5): error C2065:  'idShape': undeclared identifier
+D:\fast access\source\CPP_repos\LESSONSandHOMEWORKS\Lessons_and_homeworks_17\Lesson17MY_PAINT\Lesson17MY_PAINT\Lesson17MY_PAINT.cpp(164,15): error C2065:  'ID_SHAPES_RECTANGLE': undeclared identifier
+D:\fast access\source\CPP_repos\LESSONSandHOMEWORKS\Lessons_and_homeworks_17\Lesson17MY_PAINT\Lesson17MY_PAINT\Lesson17MY_PAINT.cpp(166,9): error C2065:  'ID_SHAPES_CIRCLE': undeclared identifier
+D:\fast access\source\CPP_repos\LESSONSandHOMEWORKS\Lessons_and_homeworks_17\Lesson17MY_PAINT\Lesson17MY_PAINT\Lesson17MY_PAINT.cpp(166,9): error C2131:  expression did not evaluate to a constant
+D:\fast access\source\CPP_repos\LESSONSandHOMEWORKS\Lessons_and_homeworks_17\Lesson17MY_PAINT\Lesson17MY_PAINT\Lesson17MY_PAINT.cpp(166,9): message :  a non-constant (sub-)expression was encountered
+D:\fast access\source\CPP_repos\LESSONSandHOMEWORKS\Lessons_and_homeworks_17\Lesson17MY_PAINT\Lesson17MY_PAINT\Lesson17MY_PAINT.cpp(167,5): error C2065:  'idShape': undeclared identifier
+D:\fast access\source\CPP_repos\LESSONSandHOMEWORKS\Lessons_and_homeworks_17\Lesson17MY_PAINT\Lesson17MY_PAINT\Lesson17MY_PAINT.cpp(167,15): error C2065:  'ID_SHAPES_CIRCLE': undeclared identifier
+D:\fast access\source\CPP_repos\LESSONSandHOMEWORKS\Lessons_and_homeworks_17\Lesson17MY_PAINT\Lesson17MY_PAINT\Lesson17MY_PAINT.cpp(163,1): error C2051:  case expression not constant
+  Rectangle.cpp
+  Shape.cpp
+  Generating Code...
+D:\fast access\source\CPP_repos\LESSONSandHOMEWORKS\Lessons_and_homeworks_17\Lesson17MY_PAINT\Lesson17MY_PAINT\Lesson17MY_PAINT.cpp(166,1): error C2051:  case expression not constant

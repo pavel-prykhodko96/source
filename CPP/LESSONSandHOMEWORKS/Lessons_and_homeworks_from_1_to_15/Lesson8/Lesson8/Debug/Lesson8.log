@@ -1,0 +1,9 @@
+﻿  pch.cpp
+  Lesson8_String_func_and_sort.cpp
+c:\users\pavlu\source\repos\lessons\lesson8\lesson8\lesson8_string_func_and_sort.cpp(10): error C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\string.h(440): note: see declaration of 'strtok'
+c:\users\pavlu\source\repos\lessons\lesson8\lesson8\lesson8_string_func_and_sort.cpp(13): error C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\string.h(440): note: see declaration of 'strtok'
+  Struct.cpp
+c:\users\pavlu\source\repos\lessons\lesson8\lesson8\struct.cpp(46): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating Code...

@@ -1,0 +1,176 @@
+FUNCTION POINTER (Указатель на ф-ции):
+
+чтобы создать указатель на ф-цию нужно:
+
+int sum(int a, int b)
+{...}
+
+int main()
+{
+  cout << sum << endl;      //вывод адреса где хранится ф-ция
+  int (*pF)(int,int) = sum; //создаём указатель на ф-цию
+}
+
+
+ПРЕДИКАТИВНЫЕ Ф-ЦИИ:
+
+можно добавлять указатели на ф-цию в аргументы другой ф-ции
+чтобы кусок кода в самой функции исполнялся так или иначе
+а остальная часть оставалась неизменной:
+
+bool ascending(int a, int b)
+{
+  if (a > b)
+    return true;
+  return false;
+}
+bool descending(int a, int b)
+{
+  if (a < b)
+    return true;
+  return false;
+}
+void bubblesort(int *iArr, int nSize, bool (*pSORT)(int,int))
+{
+  int ntemp(0);
+  for (int i = 0; i < nSize; ++i)
+  {
+    for (int j = 0; j < nSize - 1 - i; ++j)
+    {
+      if (pSORT(iArr[j],iArr[j+1]))
+      {
+      ntemp = iArr[j];
+      iArr[j] = iArr[j + 1];
+      iArr[j + 1] = ntemp;				
+      }
+    }		
+  }
+}
+
+Д/З: к базе данных студентов записать ф-цию сортировки принимающую
+указатель на предикативную ф-цию и написать 2 предикативных:
+1. сортировка по фамилиям в алф. порядке
+2. по 3 критериям на выбор!
+
+QSORT (библиотечная ф-ция, которая принимает предикативную ф-цию
+       как аргумент):
+  void qsort( void *ptr, std::size_t count, std::size_t size,
+                                            comp /*compare-pred*/*);
+  int cmp(const void *a, const void *b);
+
+нужно создать дополнительную ф-цию для с возвращемым значением 
+int (-1,0,1) сортировки массива int:
+
+int arQSORT (const void* pLeft, const void* pRight)
+{
+  int *pL = (int*)pLeft;
+  int *pR = (int*)pRight;
+  if (*pL < *pR)
+    return -1;
+  else if (*pL == *pR)
+    return 0;
+  else return 1;
+}
+
+для массива Student: 
+
+int stQSORT (const void* pLeft, const void* pRight)
+{
+  Student *pL = (Student*)pLeft;
+  ......
+  return strcmp.....
+}
+
+FUNCTION TEMPLATE (Шаблоны): FunctionTemplate.cpp
+
+int Sum (int a, int b)
+{
+  return a+b;
+}
+double Sum (double a, double b)
+{
+  return a+b;
+}
+ Чтобы не писать для каждого типа ф-цию:
+
+Template <typename T>
+T Sum (Ta, Tb)
+{
+  return a + b;
+}
+
+ *шаблон нельзя разрывать на прототип и тело, пишем до main()
+ *заголовочные файлы для шаблонов .hpp вместо .h
+ *Компилятор на основе типа параметра определяет значение 'T'
+ *В шаблонах не выполняется автопреведение типов
+ *Обычная ф-ция приоритетней шаблона
+
+cout << Sum (7.5, 8.1) << endl; //Компилятор проверяет тип
+                                //и решает вызвать int Sum или T Sum
+cout << Sum (7.5, 5) << endl;   //Шаблон не вызовется, может вызваться только int ф-ция
+cout << <double> Sum (7.5, 5) << endl;  //OK: Явное указание компилятору сгенерировать
+                                        //Для шаблонной ф-ции тип double
+
+Если используем typename то можно принять и встроенный тип и пользовательский
+также можно вместо typename написать class, тоже будет приниматься любой тип
+но негласно class вместо typename используют для пользовательских типов
+
+Также можно написать вот так:
+template <typename T, typename T2>
+T Sum (T a, T2 b) //возвращает тип int
+{
+  return a + b;
+}
+
+Чтобы определить тип результата (округление к большему по размеру типа) 
+- auto:
+
+template <typename T, typename T2>
+auto Sum (T a, T2 b) //возвращает тип double
+}                    //если ..<< Sum(7.5,8) <<..
+  return a + b;
+}
+
+Как вернуть результат типа T2, если его нету в списке аргументов ф-ции?:
+
+template <typename T, typename T2>
+T2 Sum (T a, T b) //error: don't know what is T2
+{
+  return a + b;
+}
+
+template <typename T2, typename T> //T2 должен стоять первым
+T2 Sum (T a, T b)                  //в записи template <..T2,..T>
+{
+  return a + b;
+}
+
+и при вызове явно указать возвращаемый тип результата: 
+cout << <T2> Sum (7.5, 5); // OK.
+
+
+ФУНКЦИИ С НЕОПРЕДЕЛЁННЫМ КОЛИЧЕСТВОМ ПАРАМЕТРОВ:
+Func_with_undef_score.cpp
+
+int func (int a, ...) {}
+
+РАБОТА С ФАЙЛОМ:
+RUN_BY_FILE.cpp
+
+FIND FIRST
+FIND NEXT
+
+Нужно изменить настройки проекта:
+Project > properties > character set > multi-byte
+Разобраться.
+
+Д/з: найти всё папки и файлы на диске C: которые начинаются на букву 'A' or else
+or with '.txt' or else.
+
+
+
+
+
+
+
+                                                                                                                                                                                                                                                                                                                  

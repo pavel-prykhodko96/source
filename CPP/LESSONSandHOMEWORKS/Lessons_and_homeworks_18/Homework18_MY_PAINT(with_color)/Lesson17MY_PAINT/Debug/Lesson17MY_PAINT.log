@@ -1,0 +1,15 @@
+﻿  stdafx.cpp
+  Circle.cpp
+  DisplayOutput.cpp
+  FileOutput.cpp
+  Lesson17MY_PAINT.cpp
+D:\fast access\source\CPP_repos\LESSONSandHOMEWORKS\Lessons_and_homeworks_18\Homework18_MY_PAINT(with_color)\Lesson17MY_PAINT\Lesson17MY_PAINT.cpp(192,11): warning C4101:  'pf': unreferenced local variable
+  Rectangle.cpp
+  SaveOpFILE.cpp
+D:\fast access\source\CPP_repos\LESSONSandHOMEWORKS\Lessons_and_homeworks_18\Homework18_MY_PAINT(with_color)\Lesson17MY_PAINT\Lesson17MY_PAINT.cpp(226,11): warning C4101:  'pf': unreferenced local variable
+  Shape.cpp
+  vector_shape.cpp
+D:\fast access\source\CPP_repos\LESSONSandHOMEWORKS\Lessons_and_homeworks_18\Homework18_MY_PAINT(with_color)\Lesson17MY_PAINT\SaveOpFILE.cpp(18,21): warning C4018:  '<': signed/unsigned mismatch
+  Generating Code...
+D:\fast access\source\CPP_repos\LESSONSandHOMEWORKS\Lessons_and_homeworks_18\Homework18_MY_PAINT(with_color)\Lesson17MY_PAINT\vector_shape.cpp(10,21): warning C4018:  '<': signed/unsigned mismatch
+  Lesson17MY_PAINT.vcxproj -> D:\fast access\source\CPP_repos\LESSONSandHOMEWORKS\Lessons_and_homeworks_18\Homework18_MY_PAINT(with_color)\Debug\Lesson17MY_PAINT.exe

@@ -1,0 +1,9 @@
+﻿  Lesson17MY_PAINT.cpp
+c:\users\pavlu\source\repos\lessonsandhomeworks\homework17.5_my_paint(attempt_to_create_buffer_and_union)\lesson17my_paint\vector_shape.h(15): warning C4018: '<': signed/unsigned mismatch
+c:\users\pavlu\source\repos\lessonsandhomeworks\homework17.5_my_paint(attempt_to_create_buffer_and_union)\lesson17my_paint\saveopfile.h(19): warning C4624: 'BlockShape': destructor was implicitly defined as deleted
+  SaveOpFILE.cpp
+c:\users\pavlu\source\repos\lessonsandhomeworks\homework17.5_my_paint(attempt_to_create_buffer_and_union)\lesson17my_paint\vector_shape.h(15): warning C4018: '<': signed/unsigned mismatch
+c:\users\pavlu\source\repos\lessonsandhomeworks\homework17.5_my_paint(attempt_to_create_buffer_and_union)\lesson17my_paint\saveopfile.h(19): warning C4624: 'BlockShape': destructor was implicitly defined as deleted
+c:\users\pavlu\source\repos\lessonsandhomeworks\homework17.5_my_paint(attempt_to_create_buffer_and_union)\lesson17my_paint\saveopfile.cpp(37): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+  Lesson17MY_PAINT.vcxproj -> C:\Users\pavlu\source\repos\LESSONSandHOMEWORKS\Homework17.5_MY_PAINT(attempt_to_create_buffer_and_union)\Debug\Lesson17MY_PAINT.exe

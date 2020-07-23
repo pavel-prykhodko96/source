@@ -1,0 +1,4 @@
+﻿  Lesson19.cpp
+c:\users\pavlu\source\repos\lessonsandhomeworks\homework19(template)\lesson19\lesson19.cpp(11): warning C4018: '<': signed/unsigned mismatch
+c:\users\pavlu\source\repos\lessonsandhomeworks\homework19(template)\lesson19\list.hpp(75): warning C4715: 'List<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::find': not all control paths return a value
+  Lesson19.vcxproj -> C:\Users\pavlu\source\repos\LESSONSandHOMEWORKS\Homework19(Template)\Debug\Lesson19.exe

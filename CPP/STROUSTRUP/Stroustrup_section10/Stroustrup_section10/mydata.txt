@@ -1,0 +1,40 @@
+= 17
+= 52
+= 11
+= 7.5
+= 15
+= 17
+= 36
+Incorrect token
+primary is missed
+info loss
+primary is missed
+primary is missed
+Dividing on zero
+= 3
+= -2
+= -2
+= 1.23457e+15
+Incorrect token
+get: undifined identifier q
+get: undifined identifier q
+get: undifined identifier sld
+ no name of variable
+no name of file
+no name of file
+Incorrect token
+Incorrect token
+get: undifined identifier f
+get: undifined identifier b
+get: undifined identifier b
+Incorrect token
+get: undifined identifier es
+Incorrect token
+= 115
+primary is missed
+= 9.48797e+07
+= 17
+= 5.82622e+14
+= 17
+primary is missed
+get: undifined identifier ghdghdgjhdfgjdfyg

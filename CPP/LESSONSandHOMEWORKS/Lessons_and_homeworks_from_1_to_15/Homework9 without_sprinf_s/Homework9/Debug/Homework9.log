@@ -1,0 +1,3 @@
+﻿  Homework9_without_sprintf_s.cpp
+c:\users\pavlu\source\repos\homeworks\homework9 without_sprinf_s\homework9\homework9_without_sprintf_s.cpp(28): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Homework9.vcxproj -> C:\Users\pavlu\source\repos\HOMEWORKS\Homework9 without_sprinf_s\Debug\Homework9.exe

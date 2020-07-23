@@ -1,0 +1,3 @@
+﻿  Lesson7binarysort.cpp
+c:\users\it-univer11\source\repos\lesson7\lesson7\lesson7binarysort.cpp(38): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Lesson7.vcxproj -> C:\Users\IT-Univer11\source\repos\Lesson7\Debug\Lesson7.exe

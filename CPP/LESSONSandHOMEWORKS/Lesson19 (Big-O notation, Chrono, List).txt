@@ -1,0 +1,64 @@
+
+                              Big-O notation
+
+в C++11 по€вилась библиотекка Chrono дл€ работы со временем
+дл€ разных платформ
+
+#include <chrono>
+
+auto startTime = std::chrono::steady_clock::now();
+//auto is std::chrono::time_point<std::chrono::steady_clock>
+unsigned long size = 100000;
+std::vector<int> v(size, 42);
+for (auto el : v)
+  el += 20;
+auto endTime = std::chrono::steady_clock::now();
+std::chrono::duration <double> diff = endTime - startTime;
+std::cout << "Time to fill and iterate a vector of " << size 
+    << " ints: " << diff.count() << " sec\n";
+
+≈сть разные зависимости длительности выполнени€ алгоритмов
+от вход€щих параметров - это и есть Big-O notation
+
+1) - константна€ сложность - неважно какие вход€щие параметры ќ(const)
+2) - линейна€ сложность - чем больше параметр тем больше врем€ линейно
+     O(n)
+3) - квадратическа€ ф-ци€ O(n^2) например цикл в цикле, каждый зависит
+     от n - сортировка пузырьком или вставками
+4) - логарифмическа€ сложность O(log n) - например Binary search
+     в отсортированном массиве - работает быстрее линейного
+5) - поли-логарифмическа€ сложность O(n*log n) - например mergesort
+6) - показательна€ сложность O(2^n) - числа ‘ибоначчи, ’анойские башни
+7) - факториальна€ сложность O(n!) 
+
+                                  List
+
+class List
+{
+public:
+  List() = default;
+  ~List();
+  void push_back(int el);
+  void show() const;
+  int size() const;
+private:
+  struct Node
+  {
+    int m_val;
+    Node *m_pNext;
+    Node (int n): m_val(n), m_pNext(nullptr) {}
+  };
+  Node *m_pBeg = nullptr;
+  Node *m_pEnd = nullptr;
+  int m_nSize = 0;
+};
+
+ƒ.«.
+
+1. написать ф-цию котора€ ищет заданный пользователем элемент в List
+   (по значению)
+2. сумму всех значений
+3. удалить элемент значение которого указываетс€ пользователем
+4. сделать List шаблонным (чтобы был как в STL)
+
+

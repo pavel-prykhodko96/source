@@ -1,0 +1,4 @@
+﻿  Task2.cpp
+c:\users\pavlu\source\repos\lessonsandhomeworks\homework20_list\lesson19\list.h(26): warning C4240: nonstandard extension used: access to 'List::iterator' now defined to be 'public', previously it was defined to be 'private'
+  c:\users\pavlu\source\repos\lessonsandhomeworks\homework20_list\lesson19\list.h(9): note: see declaration of 'List::iterator'
+  Lesson19.vcxproj -> C:\Users\pavlu\source\repos\LESSONSandHOMEWORKS\Homework20_LIST\Debug\Lesson19.exe

@@ -1,0 +1,4 @@
+﻿  Homework7.1.cpp
+c:\users\pavlu\source\repos\homework7.1\homework7.1\homework7.1.cpp(19): warning C4305: 'initializing': truncation from '__int64' to 'int'
+c:\users\pavlu\source\repos\homework7.1\homework7.1\homework7.1.cpp(19): warning C4309: 'initializing': truncation of constant value
+  Homework7.1.vcxproj -> C:\Users\pavlu\source\repos\Homework7.1\Debug\Homework7.1.exe

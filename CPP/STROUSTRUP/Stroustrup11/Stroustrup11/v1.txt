@@ -1,0 +1,16 @@
+1 met 2 times.
+2
+3
+4
+5 met 4 times.
+5.11 met 2 times.
+5.2 met 4 times.
+5.3 met 2 times.
+6 met 2 times.
+6.2
+7
+8
+9.654
+10.64
+11
+521

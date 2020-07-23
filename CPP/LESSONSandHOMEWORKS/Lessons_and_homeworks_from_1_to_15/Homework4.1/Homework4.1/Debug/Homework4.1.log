@@ -1,0 +1,3 @@
+﻿  Homework4.1.cpp
+c:\users\pavlu\source\repos\homework4.1\homework4.1\homework4.1.cpp(24): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Homework4.1.vcxproj -> C:\Users\pavlu\source\repos\Homework4.1\Debug\Homework4.1.exe

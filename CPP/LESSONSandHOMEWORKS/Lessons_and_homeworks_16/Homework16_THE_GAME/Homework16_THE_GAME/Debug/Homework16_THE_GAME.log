@@ -1,0 +1,4 @@
+﻿  pch.cpp
+  Homework16_THE_GAME_new.cpp
+D:\fast access\source\CPP_repos\LESSONSandHOMEWORKS\Lessons_and_homeworks_16\Homework16_THE_GAME\Homework16_THE_GAME\Homework16_THE_GAME_new.cpp(157,12): warning C4244:  'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Homework16_THE_GAME.vcxproj -> D:\fast access\source\CPP_repos\LESSONSandHOMEWORKS\Lessons_and_homeworks_16\Homework16_THE_GAME\Debug\Homework16_THE_GAME.exe

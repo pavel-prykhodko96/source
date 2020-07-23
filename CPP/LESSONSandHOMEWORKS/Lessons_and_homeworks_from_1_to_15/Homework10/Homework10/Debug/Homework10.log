@@ -1,0 +1,4 @@
+﻿  pch.cpp
+  STUD_BASE_WITH_EXP.cpp
+c:\users\pavlu\source\repos\homeworks\homework10\homework10\stud_base_with_exp.cpp(22): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Homework10.vcxproj -> C:\Users\pavlu\source\repos\HOMEWORKS\Homework10\Debug\Homework10.exe

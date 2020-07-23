@@ -1,0 +1,5 @@
+﻿  Lesson17MY_PAINT.cpp
+c:\users\pavlu\source\repos\lesson18my_paint\lesson17my_paint\vector_shape.h(15): warning C4018: '<': signed/unsigned mismatch
+c:\users\pavlu\source\repos\lesson18my_paint\lesson17my_paint\lesson17my_paint.cpp(187): warning C4101: 'pf': unreferenced local variable
+c:\users\pavlu\source\repos\lesson18my_paint\lesson17my_paint\lesson17my_paint.cpp(218): warning C4101: 'pf': unreferenced local variable
+  Lesson17MY_PAINT.vcxproj -> C:\Users\pavlu\source\repos\Lesson18MY_PAINT\Debug\Lesson17MY_PAINT.exe

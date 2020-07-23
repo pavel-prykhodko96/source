@@ -1,0 +1,5 @@
+﻿  Money.cpp
+c:\users\pavlu\source\repos\stroustrup_section9.0\stroustrup_section9.0\money.cpp(25): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+c:\users\pavlu\source\repos\stroustrup_section9.0\stroustrup_section9.0\money.cpp(164): warning C4715: 'operator-': not all control paths return a value
+c:\users\pavlu\source\repos\stroustrup_section9.0\stroustrup_section9.0\money.cpp(97): warning C4715: 'operator+': not all control paths return a value
+  Stroustrup_section9.0.vcxproj -> C:\Users\pavlu\source\repos\Stroustrup_section9.0\Debug\Stroustrup_section9.0.exe

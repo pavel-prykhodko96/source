@@ -1,0 +1,5 @@
+﻿  Homework6.cpp
+c:\users\pavlu\source\repos\homework6\homework6\homework6.cpp(108): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\pavlu\source\repos\homework6\homework6\homework6.cpp(116): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\pavlu\source\repos\homework6\homework6\homework6.cpp(124): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Homework6.vcxproj -> C:\Users\pavlu\source\repos\Homework6\Debug\Homework6.exe

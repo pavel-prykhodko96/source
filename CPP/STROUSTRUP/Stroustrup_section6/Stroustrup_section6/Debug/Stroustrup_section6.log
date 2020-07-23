@@ -1,0 +1,4 @@
+﻿  Stroustrup_section6.cpp
+c:\users\pavlu\source\repos\stroustrup_section6\stroustrup_section6\stroustrup_section6.cpp(79): warning C4715: 'primary': not all control paths return a value
+c:\users\pavlu\source\repos\stroustrup_section6\stroustrup_section6\stroustrup_section6.cpp(54): warning C4715: 'Token_stream::get': not all control paths return a value
+  Stroustrup_section6.vcxproj -> C:\Users\pavlu\source\repos\Stroustrup_section6\Debug\Stroustrup_section6.exe

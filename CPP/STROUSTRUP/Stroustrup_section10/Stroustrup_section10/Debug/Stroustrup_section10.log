@@ -1,0 +1,5 @@
+﻿  10. Calc_for_files.cpp
+c:\users\pavlu\source\repos\stroustrup\stroustrup_section10\stroustrup_section10\10. calc_for_files.cpp(160): warning C4715: 'Token_stream::get': not all control paths return a value
+c:\users\pavlu\source\repos\stroustrup\stroustrup_section10\stroustrup_section10\10. calc_for_files.cpp(199): warning C4715: 'get_value': not all control paths return a value
+c:\users\pavlu\source\repos\stroustrup\stroustrup_section10\stroustrup_section10\10. calc_for_files.cpp(339): warning C4715: 'primary': not all control paths return a value
+  Stroustrup_section10.vcxproj -> C:\Users\pavlu\source\repos\STROUSTRUP\Stroustrup_section10\Debug\Stroustrup_section10.exe

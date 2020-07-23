@@ -1,0 +1,5 @@
+﻿  Stroustrup_section7NOT_FINISHED.cpp
+c:\users\pavlu\source\repos\stroustrup_section7not_finished\stroustrup_section7\stroustrup_section7not_finished.cpp(128): warning C4715: 'get_value': not all control paths return a value
+c:\users\pavlu\source\repos\stroustrup_section7not_finished\stroustrup_section7\stroustrup_section7not_finished.cpp(232): warning C4715: 'primary': not all control paths return a value
+c:\users\pavlu\source\repos\stroustrup_section7not_finished\stroustrup_section7\stroustrup_section7not_finished.cpp(97): warning C4715: 'Token_stream::get': not all control paths return a value
+  Stroustrup_section7.vcxproj -> C:\Users\pavlu\source\repos\Stroustrup_section7NOT_FINISHED\Debug\Stroustrup_section7.exe

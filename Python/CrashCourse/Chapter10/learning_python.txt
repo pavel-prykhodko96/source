@@ -1,0 +1,5 @@
+in Python you can create variables
+in Python you can create lists and dictionaries
+in Python you can create classes
+in Python you can use for and while loops
+in Python you can open and close files

@@ -1,0 +1,93 @@
+                         DLL
+
+Lesson23_dll
+
+Так же как и .exe это скомпилированный бинарный код (то есть 
+код который уже в формате для работы с машиной), но в отличии
+от .exe он  не имеет точки входа main() - не выполняется при 
+запуске а просто может быть подключен
+
+где должна лежать dll
+
+1) либо в папке с cpp - если запускать из под VS
+2) либо в папку с exe - сли запускать напрямую exe
+3) либо в системную папку, например system32 - программа
+автоматически будет там проверять если не найдёт в своих
+папках
+4) в любое другое место но указать путь
+
+dll нужно подключать к самим проектам
+
+В консоли можно запускать .exe файлы просто написав их
+имя, они запустятся если в переменных среды (PATHS) прописан
+путь к этим именам 
+
+//Windows создаёт макрос который будет в дальнейшем
+маркером нужно ли экспортировать что-либо
+
+#ifdef MOVINGRECTANGLE_EXPORTS
+#define MOVINGRECTANGLE_API __declspec(dllexport)
+#else
+#define MOVINGRECTANGLE_API __declspec(dllimport)
+#endif
+
+// This class is exported from the movingRectangle.dll
+class MOVINGRECTANGLE_API CmovingRectangle {
+public:
+	CmovingRectangle(void);
+	// TODO: add your methods here.
+};
+
+extern MOVINGRECTANGLE_API int nmovingRectangle;
+
+MOVINGRECTANGLE_API int fnmovingRectangle(void);
+
+//до этого места студия всё создаёт сама
+
+#include <iostream>
+#include <conio.h>
+
+using std::cout;
+using std::cin;
+using std::endl;
+
+extern "C" MOVINGRECTANGLE_API 
+void movingSquare(const size_t nSquareSize);
+
+extern "C" - приписка которая говорит не добавлять 
+дополнительные символы к имени ф-ции в бинарном коде
+что делает обычно компилятор С++, компилятор С этого
+не делает
+
+чтобы работать с dll нужно подключить Windows.h
+и LoadLibrary
+
+system("pause"); //оставить окно открытым
+
+в проекте Lesson23_dll два метода подключения dll файла
+в разных cpp файлах
+
+следующий проект sum - где создаём собственныю dll 
+после написания кода нужно сделать build solution а не
+запустить проект.
+Потом в папке debug создадуться .lib и .dll файлы
+
+затем мы переместили .lib .dll и .h файлы из sum в первый
+проект
+
+для подкючения классов и структур из dll файла подходит
+только второй метод подкючения 
+(#include h файл + pragma comment lib)
+
+
+
+                ПАТТЕРН АБСТРАКТНАЯ ФАБРИКА
+
+проект Abstract_Factory
+Д.З.
+1)Светлана скниет на почту рабочую завершенную версию - доделать
+2)написать также saver
+3)создать dll которая работает с этим всем и экспортирует get_factory
+которая возвращает адрес и с ним уже можно работать как угодно
+
+

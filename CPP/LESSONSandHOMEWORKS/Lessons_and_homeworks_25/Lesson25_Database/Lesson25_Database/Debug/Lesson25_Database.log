@@ -1,0 +1,7 @@
+﻿  Lesson25_Database.cpp
+Lesson25_Database.obj : error LNK2019: unresolved external symbol _sqlite3_close referenced in function _main
+Lesson25_Database.obj : error LNK2019: unresolved external symbol _sqlite3_exec referenced in function _main
+Lesson25_Database.obj : error LNK2019: unresolved external symbol _sqlite3_free referenced in function _main
+Lesson25_Database.obj : error LNK2019: unresolved external symbol _sqlite3_open referenced in function _main
+Lesson25_Database.obj : error LNK2019: unresolved external symbol _sqlite3_errmsg referenced in function _main
+C:\Users\pavlu\source\repos\LESSONSandHOMEWORKS\Lesson25_Database\Debug\Lesson25_Database.exe : fatal error LNK1120: 5 unresolved externals

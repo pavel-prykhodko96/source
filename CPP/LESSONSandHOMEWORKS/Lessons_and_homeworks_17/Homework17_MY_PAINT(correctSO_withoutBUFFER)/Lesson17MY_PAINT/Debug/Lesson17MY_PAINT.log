@@ -1,0 +1,4 @@
+﻿  SaveOpFILE.cpp
+c:\users\pavlu\source\repos\lessonsandhomeworks\homework17.5my_paint\lesson17my_paint\vector_shape.h(15): warning C4018: '<': signed/unsigned mismatch
+c:\users\pavlu\source\repos\lessonsandhomeworks\homework17.5my_paint\lesson17my_paint\saveopfile.cpp(19): warning C4018: '<': signed/unsigned mismatch
+  Lesson17MY_PAINT.vcxproj -> C:\Users\pavlu\source\repos\LESSONSandHOMEWORKS\Homework17.5MY_PAINT\Debug\Lesson17MY_PAINT.exe

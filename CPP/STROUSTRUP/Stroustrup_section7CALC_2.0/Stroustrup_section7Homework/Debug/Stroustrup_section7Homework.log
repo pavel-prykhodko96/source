@@ -1,0 +1,5 @@
+﻿  Stroustrup_section7Homework.cpp
+c:\users\pavlu\source\repos\stroustrup_section7homeworknotfinished\stroustrup_section7homework\stroustrup_section7homework.cpp(116): warning C4715: 'Token_stream::get': not all control paths return a value
+c:\users\pavlu\source\repos\stroustrup_section7homeworknotfinished\stroustrup_section7homework\stroustrup_section7homework.cpp(298): warning C4715: 'primary': not all control paths return a value
+c:\users\pavlu\source\repos\stroustrup_section7homeworknotfinished\stroustrup_section7homework\stroustrup_section7homework.cpp(158): warning C4715: 'Symbol_table::get_assig_value': not all control paths return a value
+  Stroustrup_section7Homework.vcxproj -> C:\Users\pavlu\source\repos\Stroustrup_section7HomeworkNotFinished\Debug\Stroustrup_section7Homework.exe
