@@ -7,8 +7,9 @@ class StoreItemListTableViewController: UITableViewController {
     @IBOutlet var filterSegmentedControl: UISegmentedControl!
     
     // add item controller property
+    let storeItemController = StoreItemController()
     
-    var items = [String]()
+    var items = [StoreItem]()
     
     let queryOptions = ["movie", "music", "software", "ebook"]
     
@@ -26,12 +27,18 @@ class StoreItemListTableViewController: UITableViewController {
         let mediaType = queryOptions[filterSegmentedControl.selectedSegmentIndex]
         
         if !searchTerm.isEmpty {
+            let query: [String: String] = [
+                "term": searchTerm,
+                "media": mediaType,
+                "lang": "en_us",
+                "limit": "30"
+            ]
             
-            // set up query dictionary
-            
-            // use the item controller to fetch items
-            // if successful, use the main queue to set self.items and reload the table view
-            // otherwise, print an error to the console
+            storeItemController.fetchItems(matching: query) { (storeItems) in
+                if let items = storeItems {
+                    self.items = items
+                }
+            }
         }
     }
     
@@ -39,7 +46,7 @@ class StoreItemListTableViewController: UITableViewController {
         
         let item = items[indexPath.row]
         
-        cell.textLabel?.text = item
+        cell.textLabel?.text = item.kind
         
         // set label to the item's name
         // set detail label to the item's subtitle
@@ -56,17 +63,17 @@ class StoreItemListTableViewController: UITableViewController {
     }
     
     // MARK: - Table view data source
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-
+        
         return items.count
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "itemCell", for: indexPath)
         configure(cell: cell, forItemAt: indexPath)
-
+        
         return cell
     }
     
@@ -79,7 +86,7 @@ class StoreItemListTableViewController: UITableViewController {
 }
 
 extension StoreItemListTableViewController: UISearchBarDelegate {
-
+    
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         
         fetchMatchingItems()
